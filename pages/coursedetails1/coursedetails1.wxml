@@ -1,0 +1,26 @@
+<!--miniprogram/pages/coursedetails/coursedetails.wxml-->
+
+<!--//@auther 施雅昕-->
+<!--Change on 2020/7/16  liwantong-->
+
+<view class="vcontent">
+	<!-- <image class="background" src="../../images/背景1.png" mode="aspectFill"></image> -->
+	<view class="vcoursename">
+		<button class="coursename" style="width:700rpx">{{coursedata.cname}}</button>
+	</view>
+	<view class="vcoursetime">
+		<text class="coursetime">课程时间：星期{{coursedata.xqj_a}};{{coursedata.sksj}}-{{coursedata.sksj+coursedata.skcd-1}}节;{{coursedata.time}}</text>
+	</view>
+	<view class="vteacher">
+		<text class="teacher">授课老师：{{coursedata.tname}}</text>
+	</view>
+	<view class="vplace">
+		<text class="place">上课地点：{{coursedata.address}}</text>
+	</view>
+	<view class="vgrade">
+		<text class="grade">给分情况：</text>
+	</view>
+	<view class="vphoto">
+		<image class="photo" src="../../images/picture.png"></image>
+	</view>
+</view>

@@ -1,0 +1,33 @@
+<!--miniprogram/pages/coursecollection/coursecollection.wxml-->
+
+<import src="courseitem/courseitem.wxml" />
+
+<view class="section">
+	<radio-group bindchange="radiochange">
+		<view class="allradio">
+			<view class="radiobox" wx:for="{{lx}}" wx:key="{{lx.id}}">
+				<radio value="{{item.value}}">{{item.name}}</radio>
+			</view>
+		</view>
+	</radio-group>
+</view>
+
+<view class="table">
+  <view class="tr1">
+    <view class="th" style="width:180rpx">课程名称</view>
+    <view class="th" style="width:120rpx">老师</view>
+    <view class="th" style="width:440rpx">课程信息</view>
+  </view>
+</view>
+
+<block wx:for="{{collectcourse2}}" wx:for-item="item">
+	<!-- 调用模板 ，注意最后的反斜杠符号-->
+	<view bindtap="onCourseTap" data-index="{{index}}">
+		<template is="courseItem" data="{{...item}}" />
+	</view>
+</block>
+
+
+<view class="vbtns">
+	<button class="btn1" style="width:800rpx">讨论帖收藏夹</button>
+</view>

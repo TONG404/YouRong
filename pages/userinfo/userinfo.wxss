@@ -1,0 +1,126 @@
+/* miniprogram/pages/userinfo/userinfo.wxss */
+
+/*@auther:施雅昕*/
+
+/*设置单个页面背景颜色——！！！page前不需要加点*/
+page{
+  height: 100%;
+  background-color: #fff;
+}
+
+/*基本设置栏*/
+.basic{
+  display: flex;
+  flex-direction: row;
+}
+.stunum{
+  margin-top: 20rpx;
+  margin-left: 35rpx;
+}
+.name{
+  margin-top: 40rpx;
+  margin-left: 35rpx;
+}
+
+/*头像用户名*/
+.photo{ 
+  border-radius: 50%;
+  overflow: hidden;
+  width: 120rpx;
+  height: 120rpx;
+  position: relative;
+  background: white;
+  left: 40rpx;
+  top: -92rpx;
+  margin-right: 60rpx;
+  margin-top: 130rpx;
+  margin-left: 30rpx;
+}
+.userInfo {
+  border-radius: 50%;
+  width: 120rpx;
+  height: 120rpx;
+}
+
+/*横向按钮栏*/
+
+/*横向按钮栏*/
+.btns{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: -50rpx;
+}
+.vbtn{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+}
+/*横排按钮*/
+.btn1{
+  width: 33.3%;
+  height: 200rpx;
+  margin-top: 20rpx;
+  background-color: #76c1c6;
+  font-size: 30rpx;
+  color: white;
+  border-radius: 20rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.btnImg1 {
+  width: 50rpx;
+  height: 50rpx;
+  margin-left: 7rpx;
+  margin-top: 40rpx;
+}
+.text{
+  margin-top: -20rpx;
+}
+
+.vbtn{
+  display: flex;
+  flex-direction: column;
+  margin-top: -10rpx;
+  margin-left: 50rpx;
+}
+
+/*纵向按钮栏*/
+.btns2{
+  display: flex;
+  flex-direction: column;
+  margin-top:60rpx;
+  width: 100%;
+  justify-content: center;
+}
+/*纵排按钮详情*/
+.btn2{
+  margin-top: 40rpx;
+  background-color:#76c1c6;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.btnImg {
+  margin-right: 30rpx;
+  width: 46rpx;
+  height: 46rpx;
+}
+
+/*退出登录*/
+.exit {
+  width: 80%;
+  margin-top: 60rpx;
+  background-color: rgb(238, 171, 171);
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}

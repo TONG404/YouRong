@@ -1,0 +1,112 @@
+/* miniprogram/pages/coursedetails/coursedetails.wxss */
+
+/*@auther 施雅昕*/
+
+.background {
+  width: 100%;
+  height: 100%;
+  position:fixed; 
+  background-size:100% 100%;
+  z-index: -1;
+}
+
+.vcoursename{
+  display: flex;
+  margin-top: 20rpx;
+}
+.coursename{
+  height: 100rpx;
+  margin-top: 20rpx;
+  background-color: #8cbc8c;
+  color:#2f4f2f;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+  font-weight: 600;
+}
+
+.vcoursetime{
+  display: flex;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+}
+.coursetime{
+  font-size: 40rpx;
+  font-weight: 500;
+}
+.vteacher{
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.teacher{
+  font-size: 40rpx;
+  font-weight: 500;
+}
+.vplace{
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.place{
+  font-size: 40rpx;
+  font-weight: 500;
+}
+.vgrade{
+  display: flex;
+  margin-top: 20rpx;
+  margin-left: 30rpx;
+}
+.grade{
+  font-size: 40rpx;
+  font-weight: 500;
+}
+
+
+/*饼状图*/
+.vphoto{
+  display: flex;
+  margin-top: 25rpx;
+  margin-left: 20rpx;
+}
+.photo{
+  margin-top: 30rpx;
+  margin-left: 20rpx;
+}
+
+.vbtn{
+  margin-top: 40rpx;
+}
+.btn{
+  height: 100rpx;
+  margin-top: 30rpx;
+  background-color: #abdcabe0;
+  color:white;
+  border-radius: 40rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+  font-weight: 400;
+}
+
+.vbtn1{
+  margin-top: 100rpx;
+}
+.btn1{
+  height: 100rpx;
+  margin-top: 100rpx;
+  background-color: #9bc49be0;
+  color:white;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 40rpx;
+  font-weight: 400;
+}

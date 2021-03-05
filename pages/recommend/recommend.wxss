@@ -1,0 +1,163 @@
+
+/*Create on Tue July 08
+@author:liwantong*/
+
+
+page{
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+.top{                /*顶部模块*/
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.Sinput{             /*输入框容器*/
+height:30px;
+width:600rpx;
+margin:20rpx 0 10rpx 20rpx;
+}
+.SBtn{               /*按钮容器*/
+  height:30px;
+  width: 170rpx;
+  margin:20rpx 20rpx 10rpx 15rpx;
+} 
+.inputSearch{        /*输入框*/
+  height: 30px;
+  width: 500rpx;
+  line-height: 15px;   /*使文字水平居中*/
+  border:0.5px solid #76C1C6;
+  border-radius: 30rpx;
+}
+.BtnSearch{           /*按钮*/
+  size:mini;
+  height:30px;
+  background-color: #76C1C6;
+  color:#fff;
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 15px;   /*使文字水平居中*/
+}
+swiper{
+  height:500rpx;
+}
+.btn{
+  margin-top: 40rpx;
+  background-color:#76C1C6;
+  color: white;
+  border-radius: 98rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.btnImg {
+  margin-right: 20rpx;
+  margin-left: -60rpx;
+  width: 70rpx;
+  height: 70rpx;
+}
+.vtext{
+  margin-left: -10rpx;
+}
+.btnImg1 {
+  margin-right: 20rpx;
+  margin-left: -60rpx;
+  width: 50rpx;
+  height: 50rpx;
+}
+.vtext1{
+  margin-left: 8rpx;
+}
+
+/*卡片层叠滑动*/
+.teachers_banner {
+  width: 100%;
+  height: 200px;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.teachers_b {
+  position: relative;
+  background-color:#ffffff00;
+  margin-top: -60px;
+}
+
+#slide {
+  margin: 0 auto;
+  width: 100%;
+  height: 500px;
+  position: relative;
+}
+
+image {
+  width: 100%;
+  height: 450rpx;
+}
+.hotcourse{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  line-height: 150rpx;
+  margin-left: 20px;
+}
+.hottext{
+  margin-right: 30px;
+}
+.hottextNO{
+  margin-right: 30px;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+#slide li {
+  position: absolute;
+  width: 400px;
+  height: 150rpx;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  align-items: flex-start;
+  -webkit-box-align: flex-start;
+  -webkit-align-items: flex-start;
+  overflow: hidden;
+  box-shadow: 0 0 20px #b5b6b6cb;
+}
+
+#slide li img {
+  width: 100%;
+  height: 100%;
+}
+
+.slide_right {
+  padding: 40px;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  flex: 1;
+  min-width: 0;
+}
+
+.slide_right dl {
+  padding-top: 10px;
+}
+
+.arrow .prev, .arrow .next {
+  position: absolute;
+  width: 50px;
+  top: 38%;
+  z-index: 9;
+  font: 700 96px 'simsun';
+  opacity: 0.3;
+  color: #fff;
+  cursor: pointer;
+}
+
+
+.Nbtn{
+  background-color:#ffffff00 ;
+  border-radius: 0rpx;
+  text-decoration-line: underline;
+  color:#1b747b;
+}

@@ -1,0 +1,84 @@
+<!--pages/recommend.wxml-->
+
+<!--//Create on Tue July 08       @author:liwantong-->
+
+<view class="page">
+	<view class="top">
+		<view class="Sinput">
+			<input class="inputSearch" name="searchform" placeholder="  来找找有什么好玩的吧~" bindtap="search"></input>
+		</view>
+		<view class="SBtn">
+			<!--因微信开发工具改版原因，button组件无法在wxss里改变大小，解决方法如下：-->
+			<!--1、删除app.json中的 "style":"v2"-->
+			<!--2、直接在button中设置-->
+			<button class="BtnSearch" style="width:160rpx" bindtap="test">搜索</button>
+		</view>
+	</view>
+	<view>
+		<swiper indicator-dots="true" autoplay="true" style="width:100%">
+			<swiper-item>
+				<image src="../../images/wd1.jpg" style="width:750rpx"></image>
+			</swiper-item>
+			<swiper-item>
+				<image src="../../images/wd2.jpg" style="width:750rpx"></image>
+			</swiper-item>
+			<swiper-item>
+				<image src="../../images/wd3.jpg" style="width:750rpx"></image>
+			</swiper-item>
+			<swiper-item>
+				<image src="../../images/wd4.jpg" style="width:750rpx"></image>
+			</swiper-item>
+		</swiper>
+	</view>
+
+	<view class="vhotclass">
+  	<button class="btn" style="width:500rpx;height:41px">  
+    	<image class='btnImg' src='../../images/fire.png'></image>
+    	<view class="vtext">热门课程推荐</view>
+  	</button>
+	</view>
+
+	<view class="teachers_banner">
+  	<view class="container clearfix teachers_b">
+    	<view class="slide" id="slide" bindtouchstart='moveStart' bindtouchend='moveItem'>
+
+      	<block wx:for="{{datas}}">
+        	<li animation="{{item.animation}}" style="z-index: {{item.zIndex}} ;opacity:{{item.opacity}};background-color:#76C1C6;color:#fff" bindtap="choose" data-id="{{item.id}}">
+					<view class="hotcourse" bindtap="CourseTap" data-index="{{index}}">
+          	<text class="hottextNO">NO.{{item.id}}</text>
+						<text class="hottextNO">{{hotcourse[item.id-1].name}}</text>
+						<text class="hottext">{{hotcourse[item.id-1].teacher}}</text>
+					</view>
+        	</li>
+      	</block>
+    	</view>
+  	</view>
+	</view>
+
+	<view class="vhotclass">
+  	<button class="btn" style="width:500rpx">  
+    	<image class='btnImg1' src='../../images/notice.png'></image>
+    	<view class="vtext1">通知公告</view>
+  	</button>
+	</view>
+
+	<view class="vbtns">
+		<button class="Nbtn" style="width:320px" bindtap="jumpNotice1">关于公布2020年普通本科生转专业结果和办理手续的通知</button>
+		<button class="Nbtn" style="width:320px" bindtap="jumpNotice2">武汉大学2020年上半年全国大学英语四、六级考试报名通知</button>
+		<button class="Nbtn" style="width:320px" bindtap="jumpNotice3">关于2020年端午节期间教学安排调整的通知</button>
+		<button class="Nbtn" style="width:320px" bindtap="jumpNotice4">2019-2020学年第三学期选课通知</button>
+	</view>
+
+	<!-- <view class='showContainer'>
+		<view class='frame' style='height:200px;width:150px;border:1px solid #aaaaaa;'></view>
+		<view class='frame' style='height:200px;width:150px;border:1px solid #aaaaaa;'></view>
+	</view>
+	<view class='showContainer'>
+		<view class='frame' style='height:200px;width:150px;border:1px solid #aaaaaa;'></view>
+		<view class='frame' style='height:200px;width:150px;border:1px solid #aaaaaa;'></view>
+	</view>
+	<view class='showContainer'>
+		<view class='frame' style='height:200px;width:150px;border:1px solid #aaaaaa;'></view>
+		<view class='frame' style='height:200px;width:150px;border:1px solid #aaaaaa;'></view>
+	</view> -->
+</view>

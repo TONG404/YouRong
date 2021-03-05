@@ -1,0 +1,30 @@
+/* pages/findpw/findpw2.wxss */
+
+/*Creat on 2020/7/15*/
+/*@auther liwantong*/
+
+page{
+  height:100%;
+  background-color: #fff;
+}
+
+.all{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 300rpx;
+}
+
+.input{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin-top: 20rpx;
+}
+
+.finish{
+  margin-top:250rpx;
+  border-radius: 20rpx;
+  color:#fff;
+  background-color: #76C1C6;
+}

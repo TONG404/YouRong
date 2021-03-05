@@ -1,0 +1,43 @@
+<!--pages/set/set.wxml-->
+<!--//Create on Tue July 11       @author:liwantong-->
+<view class='top'>
+  <view class='box'>
+    <view class='btn'>课程名称 </view>
+    <view class='btn2'>
+      <input type='text ' bindinput="bindKeyInput" maxlength='10 ' placeholder="点击课程名称按钮输入" focus="{{focus}}" />
+    </view>
+  </view>
+
+  <view class='box'>
+    <view class='btn'>上课地点</view>
+    <view class='btn2'>
+      <input type='text ' bindinput="bindKeyInput2" maxlength='10' placeholder="点击上课地点按钮输入" focus="{{focus2}}" />
+    </view>
+  </view>
+
+  <view class='box'>
+    <view class='btn'>上课节数</view>
+    <view class='btn2'>
+      <input type='number ' bindinput="bindKeyInput3" minlength='1' maxlength='1' placeholder="点击上课时长输入数字" focus="{{focus3}}" />
+    </view>
+  </view>
+
+  <view class='box'>
+    <view class='btn' >开始周数</view>
+    <view class='btn2'>
+      <input type='number ' bindinput="bindKeyInput4" minlength='1' maxlength='2' placeholder="点击开始周数输入数字" focus="{{focus4}}" />
+    </view>
+  </view>
+
+  <view class='box'>
+    <view class='btn' bindtap="bindButtonTap5">结束周数</view>
+    <view class='btn2'>
+      <input type='number ' bindinput="bindKeyInput5" minlength='1' maxlength='2' placeholder="点击结束周数输入数字" focus="{{focus5}}" />
+    </view>
+  </view>
+
+  <view class='savebtn' style='margin-top:100rpx'>
+    <button bindtap="save" type='submit' class="save">保存</button>
+  </view>
+
+</view>

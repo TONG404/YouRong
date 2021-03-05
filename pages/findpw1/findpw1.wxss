@@ -1,0 +1,42 @@
+/* pages/findpw/findpw1.wxss */
+
+/*Creat on 2020/7/15*/
+/*@auther liwantong*/
+
+page{
+  height:100%;
+  background-color: #fff;
+}
+
+.all{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 150rpx;
+}
+.question{
+  margin-bottom: 40px;
+}
+.question1{
+  background-color: #76C1C6;
+}
+
+.input{
+  display: flex;
+  flex-direction:row;
+  align-items: center;
+  margin-top: 20rpx;
+}
+.inputform{
+  background-color: #fff;
+  border-radius: 20rpx;
+  height:30px;
+  width:198px;
+  border:1px solid #76C1C6
+}
+.next{
+  margin-top:100rpx;
+  border-radius: 20rpx;
+  color:#fff;
+  background-color: #76C1C6;
+}

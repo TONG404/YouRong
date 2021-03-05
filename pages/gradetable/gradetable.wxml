@@ -1,0 +1,64 @@
+<!--miniprogram/pages/gradetable/gradetable.wxml-->
+
+<import src="gradetemp/gradetemp.wxml" />
+
+<view class="vbtn">
+	<button class="btn">成绩单</button>
+</view>
+
+<view class="section">
+	<view class="section-title">学年</view>
+	<radio-group bindchange="radiochange1">
+		<view class="allradio">
+			<view class="radiobox" wx:for="{{xn}}" wx:key="{{xn.id}}">
+				<radio value="{{item.value}}">{{item.name}}</radio>
+			</view>
+		</view>
+	</radio-group>
+</view>
+
+<view class="section">
+	<view class="section-title">学期</view>
+	<radio-group bindchange="radiochange2">
+		<view class="allradio">
+			<view class="radiobox" wx:for="{{xq}}" wx:key="{{xq.id}}">
+				<radio value="{{item.value}}">{{item.name}}</radio>
+			</view>
+		</view>
+	</radio-group>
+</view>
+
+<view class="section">
+	<view class="section-title">类型</view>
+	<radio-group bindchange="radiochange3">
+		<view class="allradio">
+			<view class="radiobox" wx:for="{{lx}}" wx:key="{{lx.id}}">
+				<radio value="{{item.value}}">{{item.name}}</radio>
+			</view>
+		</view>
+	</radio-group>
+</view>
+
+<view class="vbtn1">
+	<button class="btn1" size="mini" bindtap="require">查询</button>
+</view>
+
+
+<view class="title">
+		<view class="titlebox1" style="width:300rpx"> 课程名称 </view>
+	<view class="titlebox" style="width:150rpx">老师</view>
+	<view class="titlebox" style="width：125rpx">成绩</view>
+	<view class="titlebox" style="width:125rpx">学分</view>
+</view>
+
+<block wx:for="{{allgrade}}" wx:for-item="item">
+	<!-- 调用模板 ，注意最后的反斜杠符号-->
+	<view data-index="{{item.index}}">
+		<template is="gradeItem" data="{{...item}}" />
+	</view>
+</block>
+
+<view class="vGPA">
+	<!--<navigator url="../GPA/GPA?allgrade="+allgrade></navigator>-->
+	<button class="GPA" style=" height:70rpx; width:600rpx" bindtap="jumpPage">计算选定课程GPA</button>
+</view>

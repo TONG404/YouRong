@@ -1,0 +1,28 @@
+<!--pages/timeTable/timeList/timeList.wxml-->
+
+<!-- 导入模板文件，注意最后的反斜杠符号 -->
+<import src="listdetails/timeList-template" />
+
+<view class="List" style="height:50rpx;width:100%">
+<button class="list" style="height:50rpx;width:300rpx">列表模式</button>
+</view>
+<view class="title">
+<view class="titlebox" style="width:180rpx">课程名</view>
+<view class="titlebox" style="width:120rpx">教师</view>
+<view class="titlebox" style="width:280rpx">时间</view>
+<view class="titlebox" style="width:170rpx">上课地点</view>
+</view>
+
+<!-- 模板化 -->
+<block wx:for="{{courses2}}" wx:for-item="item">
+  <!-- 调用模板 ，注意最后的反斜杠符号-->
+  <view catchtap="onCourseTap" data-index="{{item.index}}">
+    <view class="row1" style="height=50rpx;width:100%">
+<!--<view class="box" style="width:37rpx">{{cnum}}</view>-->
+<view class="box" style="width:180rpx">{{courses2[index][0]}}</view>
+<view class="box" style="width:120rpx">{{courses2[index][3]}}</view>
+<view class="box" style="width:280rpx">{{courses2[index][7]}}</view>
+<view class="box" style="width:162rpx">{{courses2[index][2]}}</view>
+</view>
+  </view>
+</block>

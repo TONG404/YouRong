@@ -1,0 +1,24 @@
+<!--miniprogram/pages/notes/notes.wxml-->
+<view class="vbnote">
+  <button class="bnote" style="width:200rpx;height:80rpx">通知</button>
+</view>
+
+<view class="vnote">
+  <text class="note">欢迎使用有容公共课程资源平台！</text>
+</view>
+
+<view class="vnote">
+  <text class="note">欢迎使用有容公共课程资源平台！</text>
+</view>
+
+<view class="vnote">
+  <text class="note">欢迎使用有容公共课程资源平台！</text>
+</view>
+
+<view class="vnote">
+  <text class="note">欢迎使用有容公共课程资源平台！</text>
+</view>
+
+<view class="vnote">
+  <text class="note">欢迎使用有容公共课程资源平台！</text>
+</view>

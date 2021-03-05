@@ -1,0 +1,12 @@
+<!--pages/findpw/findpw2.wxml-->
+
+<!--Creat on 2020/7/15-->
+<!--@author liwantong-->
+
+<view class="all">
+    <view class="input">
+      <text class="text">您的密码为</text>
+      <text class="text">{{password}}</text>
+    </view>
+    <view><button class="finish">完成</button></view>
+</view>

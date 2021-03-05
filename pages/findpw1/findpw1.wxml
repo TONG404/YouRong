@@ -1,0 +1,28 @@
+<!--pages/findpw/findpw1.wxml-->
+
+<!--Creat on 2020/7/15-->
+<!--@author liwantong-->
+
+<view class="all">
+	<view class="questions">
+		<view class="question">
+			<select class="question1" prop-array='{{question}}'></select>
+			<view class="input">
+				<input class="inputform" name="keyword" placeholder="  请输入答案" bindinput="keywordInput"></input>
+			</view>
+		</view>
+		<view class="question">
+			<select class="question1" prop-array='{{question}}'></select>
+			<view class="input">
+				<input class="inputform" name="keyword" placeholder="  请输入答案" bindinput="keywordInput"></input>
+			</view>
+		</view>
+		<view class="question">
+			<select class="question1" prop-array='{{question}}'></select>
+			<view class="input">
+				<input class="inputform" name="keyword" placeholder="  请输入答案" bindinput="keywordInput"></input>
+			</view>
+		</view>
+	</view>
+	<view><button class="next" bind:tap="nextTap">下一步</button></view>
+</view>

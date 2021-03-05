@@ -1,0 +1,11 @@
+<!--Creat on 2002/7/18-->
+<!--@auther liwantong-->
+
+<template name="gradeItem">
+<view class="row1" style="height=50rpx;width:100%" >
+<view class="box" style="width:350rpx">{{cname}}</view>
+<view class="box" style="width:125rpx">{{cteacher}}</view>
+<view class="box" style="width:125rpx">{{grade}}</view>
+<view class="box" style="width:125rpx">{{xuefen}}</view>
+</view>
+</template>

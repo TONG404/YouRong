@@ -1,0 +1,72 @@
+/* pages/subject/subject.wxss */
+
+/*Create on Tue July 11
+@author:liwantong*/
+
+
+page{
+  width:100%;
+  height: 100%;
+  background-color: #fff;
+}
+.top{
+  display: flex;
+  flex-direction: column;
+  margin-left: 35rpx;
+  color: #2f4f4f;
+  font-size: 40rpx;
+  font-weight: bold;
+  margin-top: 50rpx;
+}
+.top-text{
+  width: 100rpx;
+  height: 35rpx;
+  font-size: 9pt;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+}
+
+.box{
+  margin-top: 20rpx;
+}
+
+.btn{
+  font-size: 32rpx;
+  font-weight: 800;
+}
+
+.box1{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.box1>view{
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  font-size: 34rpx;
+}
+
+.dateOn{
+  border-radius: 50%;
+  background-color: hotpink;
+  color: #fff;
+}
+.ball {
+  box-shadow:2px 2px 10px #AAA;
+  border-radius: 20px;
+  position: absolute; 
+}
+.font-color{
+  color:#a9a9a9;
+}
+.btn2{
+  font-size: 28rpx;
+  font-weight: 500;
+}
+.save{
+  color:#fff;
+  background-color: #76C1C6;
+}

@@ -1,0 +1,8 @@
+<template name="courseItem">
+<view class="row1" style="height=50rpx;width:100%">
+<!--<view class="box" style="width:37rpx">{{cnum}}</view>-->
+<view class="box1" style="width:180rpx">{{name}}</view>
+<view class="box" style="width:120rpx">{{teacher}}</view>
+<view class="box" style="width:450rpx">{{time}}</view>
+</view>
+</template>

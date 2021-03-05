@@ -1,0 +1,55 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/recommend/recommend",
+    "pages/notes/notes",
+    "pages/index/index",
+    "pages/gradetable/gradetable",
+    "pages/GPA/GPA",
+    "pages/search/search",
+    "pages/coursedetails/coursedetails",
+    "pages/coursedetails1/coursedetails1",    
+    "pages/index2/index2",
+    "pages/userinfo/userinfo",
+    "pages/timeTable/timeTable",
+    "pages/timeList/timeList",
+    "pages/findpw1/findpw1",
+    "pages/setSubject/setSubject",
+    "pages/findpw2/findpw2",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#76C1C6",
+    "navigationBarTitleText": "有容",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#e6e6e6",
+    "selectedColor": "#1b747b",
+    "borderStyle": "white",
+    "backgroundColor": "#76C1C6",
+    "list": [
+      {
+        "selectedIconPath": "images/搜索.png",
+        "iconPath": "images/搜索1.png",
+        "pagePath": "pages/recommend/recommend",
+        "text": "搜索"
+      },
+      {
+        "selectedIconPath": "images/课程.png",
+        "iconPath": "images/课程1.png",
+        "pagePath": "pages/timeTable/timeTable",
+        "text": "课程表"
+      },
+      {
+        "selectedIconPath": "images/用户.png",
+        "iconPath": "images/用户1.png",
+        "pagePath": "pages/userinfo/userinfo",
+        "text": "用户"
+      }
+    ]
+  }
+}

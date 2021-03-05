@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<!--//Create on Tue July 07       @author:liwantong-->
+<view style="opacity:{{1}}">
+  <image src='../../images/background.png' class="background" mode="scaleToFill"></image>
+	<view class="container">
+		<view class="userinfo">
+			<button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" style="z-index:99"> 获取头像昵称 </button>
+			<block>
+				<image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover" style="z-index:99"></image>
+				<text class="userinfo-nickname" style="z-index:99">{{userInfo.nickName}}</text>
+			</block>
+		</view>
+		<view class="getin" >
+			<view class="input">
+				<text class="text">学号</text>
+				<input class="inputform" name="userID" placeholder="  请输入学号" bindinput="userIDInput"></input>
+			</view>
+			<view class="input">
+				<text class="text">密码</text>
+				<input class="inputform" type="text" name="userPassword" placeholder="  请输入密码" bindinput="userPasswordInput" password="true"></input>
+			</view>
+			<view class="findPW">
+				<button class="findpw" bind:tap="getpw">忘记密码?</button>
+			</view>
+
+			<view>
+				<view wx:for='{{user}}' wx:key='{{index}}'>
+					<text>{{item.password}}\n</text>
+				</view>
+			</view>
+
+			<view class="click">
+				<button class="loginBtn" bind:tap="onTap">登录</button>
+			</view>
+		</view>
+	</view>
+</view>

@@ -1,0 +1,21 @@
+/* pages/notice4/notice4.wxss */
+page{
+  height: 100%;
+  background-color:#76c1c62c;
+}
+
+.vtext{
+  margin-left: 25rpx;
+  margin-right: 20rpx;
+}
+
+.title{
+  font-size: 20px;
+  font-weight: 600;
+  justify-content: center;
+}
+
+.maintext{
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+}

@@ -1,0 +1,72 @@
+<!--miniprogram/pages/userinfo/userinfo.wxml-->
+
+<!--@auther:施雅昕-->
+<view class="vcontent">
+<view class="basic">
+  <view class="photo">
+    <open-data class='userInfo' type="userAvatarUrl"  bindgetuserinfo="onGotUserInfo"></open-data>
+  </view>
+  <view class="basicinfo">
+    <view class="name">
+       <open-data class='store_address' type="userNickName" lang="zh_CN"></open-data>
+    </view>
+    <view class="stunum">
+      <text>学号:{{userID}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="btns">
+  <view class="vbtn">
+  <button class="btn1" size="mini" open-type="contact">
+    <image class='btnImg1' src='../../images/conversation.png'></image>
+    <view class="text">会话</view>
+    </button>
+  </view>
+  <view class="vbtn">
+  <button class="btn1" size="mini" bindtap="jumpNotes">
+    <image class='btnImg1' src='../../images/information.png'></image>
+    <view class="text">通知</view>
+  </button>
+  </view>
+  <view class="vbtn">
+  <button class="btn1" size="mini" bindtap="jumpGradeTable">
+    <image class='btnImg1' src='../../images/grade.png'></image>
+    <view class="text">成绩</view>
+  </button>
+  </view>
+    <view class="vbtn">
+  <button class="btn1" size="mini" bindtap="jumpgetin">
+    <image class='btnImg1' src='../../images/log.png'></image>
+    <view class="text">登录</view>
+  </button>
+  </view>
+</view>
+
+<view class="btns2">
+  <view class="vhistory">
+  <button class="btn2" style="width:500rpx"  bindtap="jumpClassHistory">  
+    <image class='btnImg' src='../../images/clock.png'></image>
+    <view>历史记录</view>
+  </button>
+  </view>
+  <view class="vfavorite">
+  <button class="btn2" style="width:500rpx" bindtap="jumpClassCollections">
+    <image class='btnImg' src='../../images/collection.png'></image>
+    <view>我的收藏</view>
+  </button>
+  </view>
+  <view class="vsettings">
+  <button class="btn2" open-type="openSetting" style="width:500rpx">
+    <image class='btnImg' src='../../images/setting.png'></image>
+    <view>个性设置</view>
+  </button>
+  </view>
+  <view class="vexit">
+  <button class="exit" style="width:500rpx" bind:tap="exit">
+    <view>退出登录</view>
+  </button>
+  </view>
+</view>
+</view>
+

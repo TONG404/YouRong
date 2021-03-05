@@ -1,0 +1,68 @@
+<!--miniprogram/pages/GPA/GPA.wxml-->
+<view class="table">
+  <view class="tr1 bg-w">
+    <view class="th">成绩</view>
+    <view class="th">GPA</view>
+  </view>
+  <view class="tr bg-w">
+    <view class="th">90-100</view>
+    <view class="th">4.0</view>
+  </view>
+  <view class="tr bg-w">
+    <view class="th">85-89</view>
+    <view class="th">3.7</view>
+  </view>
+  <view class="tr bg-w">
+    <view class="th">82-84</view>
+    <view class="th">3.3</view>
+  </view>
+  <view class="tr bg-w">
+    <view class="th">78-81</view>
+    <view class="th">3.0</view>
+  </view>
+  <view class="tr bg-w">
+    <view class="th">75-77</view>
+    <view class="th">2.7</view>
+  </view> 
+  <view class="tr bg-w">
+    <view class="th">72-74</view>
+    <view class="th">2.3</view>
+  </view> 
+  <view class="tr bg-w">
+    <view class="th">68-71</view>
+    <view class="th">2.0</view>
+  </view> 
+  <view class="tr bg-w">
+    <view class="th">64-67</view>
+    <view class="th">1.5</view>
+  </view>
+  <view class="tr bg-w">
+    <view class="th">60-63</view>
+    <view class="th">1.0</view>
+  </view>
+  <view class="tr bg-w">
+    <view class="th">60分以下</view>
+    <view class="th">0</view>
+  </view>
+</view>
+
+<view class="vtext">
+  <text class="text">计算规则：</text>
+</view>
+<view class="vtext">
+  <text class="text">一门课程的学分绩=该课程的绩点×学分</text>
+</view>
+<view class="vtext">
+  <text class="text">平均学分绩点GPA=所修课程学分绩之和÷所修课程学分</text>
+</view>
+<view>
+<text>已修学分：{{zxf}}</text>
+</view>
+
+<view class="vGPA">
+  <button class="GPA" bindtap="jisuan">计算我的GPA</button>
+</view>
+
+<view class="vgrade">
+  <text class="grade">{{allgpa}}</text>
+</view>

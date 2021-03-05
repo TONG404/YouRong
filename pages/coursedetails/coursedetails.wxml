@@ -1,0 +1,61 @@
+<!--miniprogram/pages/coursedetails/coursedetails.wxml-->
+
+<!--//@auther 施雅昕-->
+<!--Change on 2020/7/16  liwantong-->
+
+<view class="vcontent">
+	<!-- <image class="background" src="../../images/背景1.png" mode="aspectFill"></image> -->
+	<view class="vcoursename">
+		<button class="coursename" style="width:600rpx；height:50rpx">{{coursedata.name}}</button>
+	</view>
+		<view class="vteacher">
+		<image src="../../images/TEACHER1.png" style="height:50rpx;width:50rpx"></image>
+		<text class="teacher">授课老师：{{coursedata.teacher}}</text>
+	</view>
+	<view class="vcoursetime">
+		<image src="../../images/TIME1.png" style="height:50rpx;width:50rpx"></image>
+		<text class="coursetime">课程信息：\n{{coursedata.time}}</text>
+	</view>
+	<view class="vcoursetime">
+			<image src="../../images/INFO1.png" style="height:50rpx;width:50rpx"></image>
+		<text class="coursetime">学分：{{coursedata.credit}}</text>
+	</view>
+	<!-- <view class="vplace">
+		<text class="place">上课地点：{{coursedata.address}}</text>
+	</view> -->
+	<view class="vgrade">
+	<view class="gradetitle">
+			<image src="../../images/GRADE1.png" style="height:50rpx;width:50rpx"></image>
+		<text class="grade">给分情况：</text>
+		</view>
+		<view class="eachgrade">
+			<text >0-60分：{{eachgrade[0]}}</text>
+			<text>61-70分：{{eachgrade[1]}}</text>
+			<text>71-80分：{{eachgrade[2]}}</text>
+			<text>81-90分：{{eachgrade[3]}}</text>
+			<text>91-100分：{{eachgrade[4]}}</text>
+		</view>
+	</view>
+	<view class="vphoto">
+		<image class="photo" src="../../images/picture.png"></image>
+	</view>
+	<view class="vbtn">
+		<button class="btn" style="width:300rpx" bindtap="collect">{{CBtn}}</button>
+	</view>
+
+	<view class="vbtn1">
+		<button class="btn1" style="width:750rpx">精选讨论区</button>
+	</view>
+
+	<view class="vshowtext" wx:for="{{commends}}">匿名用户：{{item}}</view>
+
+	<view class="commendbox">
+  <view class="commendinput">
+		<input class="commend" placeholder="请输入你的评论" bindtap='commend' bindinput="commentInput"></input>
+    </view>
+		<view class="sendbtn">
+			<button class="send" style="width:160rpx" bindtap="send">发送</button>
+		</view>
+	</view>
+
+</view>

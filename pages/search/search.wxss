@@ -1,0 +1,98 @@
+/* pages/search/search.wxss */
+
+/*Creat on 2020/7/16*/
+/*@author:liwantong*/
+
+@import"../timeList/listdetails/timeList-template.wxss";
+page{
+  height: 100%;
+  background-color: #fff;
+}
+.top{                /*顶部模块*/
+  display:flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.Sinput{             /*输入框容器*/
+height:30px;
+width:600rpx;
+margin:20rpx 0 10rpx 20rpx;
+}
+.SBtn{               /*按钮容器*/
+  height:30px;
+  width: 170rpx;
+  margin:20rpx 20rpx 10rpx 15rpx;
+} 
+.inputSearch{        /*输入框*/
+  height: 30px;
+  width: 500rpx;
+  line-height: 15px;   /*使文字水平居中*/
+  border:0.5px solid #76c1c6;
+  border-radius: 30rpx;
+}
+.BtnSearch{           /*按钮*/
+  size:mini;
+  height:30px;
+  background-color: #76c1c6;
+  color:#fff;
+  font-size: 28rpx;
+  font-weight: bold;
+  line-height: 15px;   /*使文字水平居中*/
+}
+
+.check{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.section{
+margin-bottom: 10px;
+}
+
+.section-title{
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #2a4446;
+  margin-left: 10rpx;
+}
+.check_label{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 10rpx;
+}
+
+checkbox .wx-checkbox-input{
+  border-radius:50%;
+  height:20rpx;
+  width:20rpx;
+}
+
+.checkArea{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.check_name{
+  font-size: 24rpx;
+  margin-left: -10rpx;
+  font-weight: 500;
+}
+
+.title{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: #15565b;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+.titlebox{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #76c1c6;
+}

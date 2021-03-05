@@ -1,0 +1,108 @@
+<!--pages/TimeTable/timeTable.wxml-->
+<!--//Create on Tue July 09       @author:liwantong-->
+
+<view class="btncontain1" style="height:48rpx">
+	<picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+		<view class="picker">
+			<view class="fb-type">
+				<button class='btn' style="height:48rpx;width:270rpx">选择周数</button>
+			</view>
+		</view>
+	</picker>
+	<view style="width:80rpx"></view>
+	<button class='btn' style="height:48rpx;width:270rpx" bindtap="importcourse">导入课程</button>
+</view>
+<view class="btncontain2" style="height:48rpx">
+	<button class='btn' style="height:48rpx;width:270rpx" bindtap="timelist">列表模式</button>
+	<view style="width:80rpx"></view>
+	<button class='btn' style="height:48rpx;width:270rpx" bindtap="addcourse">添加课程</button>
+</view>
+
+<view class="top">
+	<view class="week" style="width:90rpx">{{week}}</view>
+	<view class='weekday'>
+		<view wx:for="{{['日','一','二','三','四','五','六']}}" class='top-text'>周{{item}}</view>
+	</view>
+</view>
+
+
+<scroll-view scroll-y="true" class="scroll">
+	<view style="height:1750rpx;width:740rpx;display:flex;">
+		<view style='background-color:#76c1c6;color:#22393a;'>
+			<view wx:for="{{['8:00',1,'8:50',2,'9:50',3,'10:40',4,'11:30',5,'14:05',6,'14:55',7,'15:45',8,'16:40',9,'17:30',10,'18:30',11,'19:20',12,'20:10',13]}}" class='left'>{{item}}</view>
+			<!--for循环显示内容-->
+		</view>
+		<view wx:for="{{[1,2,3,4,5,6,7,8,9,10,11,12,13]}}">
+			<view style="width:750rpx;margin-top:{{(index+1)*120}}rpx;  position: absolute;border-bottom:1rpx solid lightgray;">
+			</view>
+		</view>
+		<!--课表-->
+		<block wx:for="{{courses}}" wx:for-item="item">
+			<view catchtap="onCTap" data-index="{{item.index}}">
+			<!--星期一-->
+				<view class="flex-item kcb-item" bindtap="showCardView" id='0' data-status="open" data-index="{{item.index}}" style="margin-left:99rpx;margin-top:{{(day1[0]-1)*120}}rpx;height:{{(day1[1]-day1[0]+1)*120-15}}rpx;background-color:#76c1c6">								
+					<view class="card" >
+						<view class="smalltext">{{course1[0]}}</view>
+						<view class="smalltext">{{course1[1]}}</view>
+						<view class="smalltext">{{course1[3]}}</view>
+						<view class="smalltext">{{course1[2]}}</view>
+					</view>
+				</view>
+      <!--星期二-->
+				<view class="flex-item kcb-item" bindtap="showCardView" id='0' data-status="open" data-index="{{item.index}}" style="margin-left:198rpx;margin-top:{{(day2[0]-1)*120}}rpx;height:{{(day2[1]-day2[0]+1)*120-15}}rpx;background-color:#76c1c6">
+					<view class="card">
+						<view class="smalltext">{{course2[0]}}</view>
+						<view class="smalltext">{{course2[1]}}</view>
+						<view class="smalltext">{{course2[3]}}</view>
+						<view class="smalltext">{{course2[2]}}</view>
+					</view>
+				</view>
+				<!--星期三-->
+				<view class="flex-item kcb-item" bindtap="showCardView" id='0' data-status="open" data-index="{{item.index}}" style="margin-left:297rpx;margin-top:{{(day3[0]-1)*120}}rpx;height:{{(day3[1]-day3[0]+1)*120-15}}rpx;background-color:#76c1c6">
+					<view class="card">
+						<view class="smalltext">{{course3[0]}}</view>
+						<view class="smalltext">{{course3[1]}}</view>
+						<view class="smalltext">{{course3[3]}}</view>
+						<view class="smalltext">{{course3[2]}}</view>
+					</view>
+				</view>
+				<!--星期四-->
+				<view class="flex-item kcb-item" bindtap="showCardView" id='0' data-status="open" data-index="{{item.index}}" style="margin-left:396rpx;margin-top:{{(day4[0]-1)*120}}rpx;height:{{(day4[1]-day4[0]+1)*120-15}}rpx;background-color:#76c1c6">
+					<view class="card">
+						<view class="smalltext">{{course4[0]}}</view>
+						<view class="smalltext">{{course4[1]}}</view>
+						<view class="smalltext">{{course4[3]}}</view>
+						<view class="smalltext">{{course4[2]}}</view>
+					</view>
+				</view>
+				<!--星期五-->
+				<view class="flex-item kcb-item" bindtap="showCardView" id='0' data-status="open" data-index="{{item.index}}" style="margin-left:495rpx;margin-top:{{(day5[0]-1)*120}}rpx;height:{{(day5[1]-day5[0]+1)*120-15}}rpx;background-color:#76c1c6">
+					<view class="card">
+						<view class="smalltext">{{course5[0]}}</view>
+						<view class="smalltext">{{course5[1]}}</view>
+						<view class="smalltext">{{course5[3]}}</view>
+						<view class="smalltext">{{course5[2]}}</view>
+					</view>
+				</view>
+				<!--星期六-->
+				<view class="flex-item kcb-item" bindtap="showCardView" id='0' data-status="open" data-index="{{item.index}}" style="margin-left:594rpx;margin-top:{{(day6[0]-1)*120}}rpx;height:{{(day6[1]-day6[0]+1)*120-15}}rpx;background-color:#76c1c6">
+					<view class="card">
+						<view class="smalltext">{{course6[0]}}</view>
+						<view class="smalltext">{{course6[1]}}</view>
+						<view class="smalltext">{{course6[3]}}</view>
+						<view class="smalltext">{{course6[2]}}</view>
+					</view>
+				</view>
+				<!--星期日-->
+				<view class="flex-item kcb-item" bindtap="showCardView" id='0' data-status="open" data-index="{{item.index}}" style="margin-left:0rpx;margin-top:{{(day7[0]-1)*120}}rpx;height:{{(day7[1]-day7[0]+1)*120-15}}rpx;background-color:#76c1c6">								
+					<view class="card">
+						<view class="smalltext">{{course7[0]}}</view>
+						<view class="smalltext">{{course7[1]}}</view>
+						<view class="smalltext">{{course7[3]}}</view>
+						<view class="smalltext">{{course7[2]}}</view>
+					</view>
+				</view>
+			</view>
+		</block>
+	</view>
+</scroll-view>
